@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
+        <link rel="stylesheet" media="all" type="text/css" href="../css/style.css">
+        <!-- ※デフォルトのスタイル（style.css） -->
+        <link rel="stylesheet" media="all" type="text/css" href="../css/tablet.css">
+        <!-- ※タブレット用のスタイル（tablet.css） -->
+        <link rel="stylesheet" media="all" type="text/css" href="../css/smart.css">
+    	<title>Gallery</title>
+    	<link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-image-gallery.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="../js/lang-switch.js"></script>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">Top</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <button id="en" class="btn btn-default navbar-btn" type="button">English</button>
+              <button id="jp" class="btn btn-default navbar-btn" type="button">日本語</button>
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle en" data-toggle="dropdown" role="button" aria-expanded="false">Research<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle jp" data-toggle="dropdown" role="button" aria-expanded="false">研究<span class="caret"></span></a>
+
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="en"><a href="../about_us/about_us.html">About us</a></li>
+                    <li class="en"><a href="../graduation_research_themes/graduation_research_themes.html">Graduation Research Themes</a></li>
+                    
+                    <li class="en"><a href="../international_relations/international_relations.html">International Relations</a></li>
+                    <li class="jp"><a href="../about_us/about_us.html">研究室について</a></li>
+                    <li class="jp"><a href="../graduation_research_themes/graduation_research_themes.html">卒論テーマ</a></li>
+                    <li class="jp"><a href="../international_relations/international_relations.html">国際交流</a></li>
+                  </ul>
+                </li>
+                <li class="jp"><a href="../publications/publications.html">論文集</a></li>
+                <li class="en"><a href="../publications/publications.html">Publication List</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle en" data-toggle="dropdown" role="button" aria-expanded="false">Education<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle jp" data-toggle="dropdown" role="button" aria-expanded="false">教育<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="en"><a href="../it_specialist_program/it_specialist_program.html">IT Specialist Program</a></li>
+                    <li class="jp"><a href="../it_specialist_program/it_specialist_program.html">ITスペシャリストプログラム</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle en" data-toggle="dropdown" role="button" aria-expanded="false">Members<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle jp" data-toggle="dropdown" role="button" aria-expanded="false">メンバー<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                     <li class="en"><a href="../members/members.html">Members</a></li>
+                     <li class="en"><a href="../prospective_students/prospective_students.html">Prospective Students</a></li>
+                    <li class="jp"><a href="../members/members.html">メンバー</a></li>
+                    <li class="jp"><a href="../prospective_students/prospective_students.html">学生募集</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle en" data-toggle="dropdown" role="button" aria-expanded="false">Achievements<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle jp" data-toggle="dropdown" role="button" aria-expanded="false">業績<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="en"><a href="../achievements/achievements.html">Achievements</a></li>
+                    <li class="en"><a href="../conferences_and_workshops/conferences_and_workshops.html">Conferences and Workshops</a></li>
+                    <li class="jp"><a href="../achievements/achievements.html">業績</a></li> 
+                    <li class="jp"><a href="../conferences_and_workshops/conferences_and_workshops.html">国際学会</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle en" data-toggle="dropdown" role="button" aria-expanded="false">Others<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle jp" data-toggle="dropdown" role="button" aria-expanded="false">その他<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="en"><a href="../gallery/gallery.html">Gallery</a></li>
+                    <li class="jp"><a href="../gallery/gallery.html">ギャラリー</a></li>
+                    <li class="en"><a href="../access/access.html">Access</a></li>
+                    <li class="jp"><a href="../access/access.html">交通アクセス</a></li>
+                    <li class="en"><a href="../statistics/statistics.html">Statistics</a></li>
+                    <li class="jp"><a href="../statistics/statistics.html">アクセス統計</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	</head>
+	<body>
+    <br><br>
+    <blockquote>
+    <h1><b>Gallery</b></h1>
+    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h3 class="en">Graduation 2015</h3>
+<h3 class="jp">学位授与式 2015</h3>
+<div id="Graduation2015">
+    <a href="img/Graduation2015/1.jpg" data-gallery>
+        <img src="img/Graduation2015/1_mini.jpg">
+    </a>
+</div>
+<h3 class="en">Graduation Thesis Defence 2015</h3>
+<h3 class="jp">卒論発表 2015</h3>
+<div id="GraduationThesesDefence2015">
+    <a href="img/GraduationThesesDefence2015/1.jpg" data-gallery>
+        <img src="img/GraduationThesesDefence2015/1_mini.jpg">
+    </a>
+    <a href="img/GraduationThesesDefence2015/2.jpg" data-gallery>
+        <img src="img/GraduationThesesDefence2015/2_mini.jpg">
+    </a>
+</div>
+<h3 class="en">Open Campus 2014</h3>
+<h3 class="jp">オープンキャンパス2014</h3>
+<div id="OpenCampus2014">
+    <a href="img/OpenCampus2014/1.jpg" data-gallery>
+        <img src="img/OpenCampus2014/1_mini.jpg">
+    </a>
+    <a href="img/OpenCampus2014/2.jpg" data-gallery>
+        <img src="img/OpenCampus2014/2_mini.jpg">
+    </a>
+    <a href="img/OpenCampus2014/3.jpg" data-gallery>
+        <img src="img/OpenCampus2014/3_mini.jpg">
+    </a>
+</div>
+<h3 class="en">Open Campus 2013</h3>
+<h3 class="jp">オープンキャンパス2013</h3>
+<div id="OpenCampus2013">
+    <a href="img/OpenCampus2013/1.jpg" data-gallery>
+        <img src="img/OpenCampus2013/1_mini.jpg">
+    </a>
+    <a href="img/OpenCampus2013/2.jpg" data-gallery>
+        <img src="img/OpenCampus2013/2_mini.jpg">
+    </a>
+    <a href="img/OpenCampus2013/3.jpg" data-gallery>
+        <img src="img/OpenCampus2013/3_mini.jpg">
+    </a>
+</div>
+<h3 class="en">Report ZAIDAN 2012</h3>
+<h3 class="jp">会津地域教育・学術振興財団 成果発表会2012</h3>
+<div id="ReportZAIDAN2012">
+    <a href="img/ReportZAIDAN2012/1.jpg" data-gallery>
+        <img src="img/ReportZAIDAN2012/1_mini.jpg">
+    </a>
+    <a href="img/ReportZAIDAN2012/2.jpg" data-gallery>
+        <img src="img/ReportZAIDAN2012/2_mini.jpg">
+    </a>
+    <a href="img/ReportZAIDAN2012/3.jpg" data-gallery>
+        <img src="img/ReportZAIDAN2012/3_mini.jpg">
+    </a>
+</div>
+<h3 class="en">Graduation Thesis Defence 2011</h3>
+<h3 class="jp">卒論発表 2011</h3>
+<div id="GraduationThesesDefence2011">
+    <a href="img/GraduationThesesDefence2011/1.jpg" data-gallery>
+        <img src="img/GraduationThesesDefence2011/1_mini.jpg">
+    </a>
+    <a href="img/GraduationThesesDefence2011/2.jpg" data-gallery>
+        <img src="img/GraduationThesesDefence2011/2_mini.jpg">
+    </a>
+    <a href="img/GraduationThesesDefence2011/3.jpg" data-gallery>
+        <img src="img/GraduationThesesDefence2011/3_mini.jpg">
+    </a>
+</div>
+<h3 class="en">Graduation 2010</h3>
+<h3 class="jp">学位授与式 2010</h3>
+<div id="Graduation2010">
+    <a href="img/Graduation2010/1.jpg" data-gallery>
+        <img src="img/Graduation2010/1_mini.jpg">
+    </a>
+    <a href="img/Graduation2010/2.jpg" data-gallery>
+        <img src="img/Graduation2010/2_mini.jpg">
+    </a>
+    <a href="img/Graduation2010/3.jpg" data-gallery>
+        <img src="img/Graduation2010/3_mini.jpg">
+    </a>
+</div>
+<h3 class="en">Search Contest 2009</h3>
+<h3 class="jp">サーチコンテスト 2009</h3>
+<div id="SearchContest2009">
+    <a href="img/SearchContest2009/1.jpg" data-gallery>
+        <img src="img/SearchContest2009/1_mini.jpg">
+    </a>
+    <a href="img/SearchContest2009/2.jpg" data-gallery>
+        <img src="img/SearchContest2009/2_mini.jpg">
+    </a>
+    <a href="img/SearchContest2009/3.jpg" data-gallery>
+        <img src="img/SearchContest2009/3_mini.jpg">
+    </a>
+</div>
+<h3 class="en">Tea Seminar 2008</h3>
+<h3 class="jp">ティーセミナー 2008</h3>
+<div id="TeaSeminar2008">
+    <a href="img/TeaSeminar2008/1.jpg" data-gallery>
+        <img src="img/TeaSeminar2008/1_mini.jpg">
+    </a>
+    <a href="img/TeaSeminar2008/3.jpg" data-gallery>
+        <img src="img/TeaSeminar2008/3_mini.jpg">
+    </a>
+    <a href="img/TeaSeminar2008/4.jpg" data-gallery>
+        <img src="img/TeaSeminar2008/4_mini.jpg">
+    </a>
+    <a href="img/TeaSeminar2008/5.jpg" data-gallery>
+        <img src="img/TeaSeminar2008/5_mini.jpg">
+    </a>
+</div>
+
+  </blockquote>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+  <script src="../js/bootstrap-image-gallery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
